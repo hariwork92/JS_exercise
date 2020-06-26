@@ -1,5 +1,36 @@
 <html>
     <body>
-        <p>harish is doing good</p>
+        
+        <p id="sum"></p>
+        <p id="circle"></p>
+        <p id="multiplysum"></p>
+
+        <input id="username"/>
+        <button onclick="usernameAlert()">Submit</button>
+        
+       <script>
+       function myparameters(a, b){
+           return a + b;
+        }
+           document.getElementById("sum").innerHTML = myparameters(3, 4); 
+
+           function findCircleArea (r) {
+               return 3.14 * (r * r)
+           }
+           document.getElementById("circle").innerHTML = findCircleArea(3)
+
+           function multiply(a, b) {
+               return a * b
+           }
+           document.getElementById("multiplysum").innerHTML = multiply(2, 3)
+
+           function usernameAlert() {
+               var x = document.getElementById('username').value;
+
+               alert ("Hello"+ " " + x);
+           }         
+
+       </script> 
+
     </body>
 </html>
