@@ -1,0 +1,76 @@
+<html>
+    <body>
+
+        <p>Check Arrays code Use</p>
+        <p id="arrayresult"></p>
+
+        <script>
+            var arrays = ["10000 USD", "12000 USD", "25000 USD"];
+            document.getElementById("arrayresult").innerHTML = arrays ;
+        </script>
+
+        
+        <p>Arrays particular use for particular object</p>
+        <p id="arrayuse"></p>
+        
+        <script>
+            var arrays = ["10000 USD", "12000 USD", "25000 USD"];
+            document.getElementById("arrayuse").innerHTML = arrays[1];
+        </script>
+
+
+        <p>Arrays And Loop Use</p>
+        <p id="arrayloop"></p>
+
+        <script>
+            var arrays = ["10000 USD", "12000 USD", "25000 USD"];
+            var arraylenth = arrays.length;
+
+            arraytext = " ";
+
+            for (var i = 0; i < arraylenth; i++) {
+                arraytext += arrays[i] + "</br>";
+                console.log(arraytext, i)
+            }
+            document.getElementById("arrayloop").innerHTML = arraytext;            
+        </script>
+
+        <p>Number 1-10 by Looping</p>
+        <p id="noloop"></p>
+
+        <script>
+            var nocheck = 10;
+            var notext = " ";
+            for (var i = 1; i <= nocheck; i++) {
+                notext += i + "</br>";
+            }
+
+            document.getElementById("noloop").innerHTML = notext;            
+        </script>
+
+        <p>Count Till</p> 
+        <p id="countloop"></p>
+        <p id="countloop7"></p>
+
+        <script>
+            function countTill (x, y) {
+                
+                var counttext = " ";
+                for (var i =1; i <= x; i++) {
+                    counttext += i + "</br>"
+                }
+
+                
+                document.getElementById(y).innerHTML = counttext;
+            }
+            countTill(20, "countloop")
+            countTill(20, "countloop7")
+            countTill(60, "countloop7")
+           
+            
+        </script>
+
+
+        
+    </body>
+</html>
